@@ -33,7 +33,7 @@ public class DateAndTime_03_Test {
     public void test_localTime_parse() {
 
         // TODO créer un objet LocalTime à l'heure 09h30m00s à l'aide de la méthode parse
-        LocalTime result = LocalTime.parse("09:30:00");
+        LocalTime result = LocalTime.parse("09h30m00s",DateTimeFormatter.ofPattern("HH'h'mm'm'ss's'"));
 
 
         // TODO valoriser les différentes variables afin de rendre le test passant

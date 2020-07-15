@@ -41,7 +41,7 @@ public class DateAndTime_04_Test {
     public void test_localDateTime_parse() {
 
         // TODO créer un objet LocalTime à l'heure 2 mars 2009 à 09h30m00s à l'aide de la méthode parse
-        LocalDateTime result = LocalDateTime.parse("2009-03-02T09:30:00");
+        LocalDateTime result = LocalDateTime.parse("2 mars 2009 à 09h30m00s",DateTimeFormatter.ofPattern("d MMMM yyyy à HH'h'mm'm'ss's'"));
 
         // TODO valoriser les différentes variables afin de rendre le test passant
         int hour = result.getHour();
