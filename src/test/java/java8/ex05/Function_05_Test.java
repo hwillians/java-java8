@@ -4,6 +4,8 @@ import java8.data.Data;
 import java8.data.Person;
 import org.junit.Test;
 
+import static org.junit.Assert.assertTrue;
+
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -19,15 +21,12 @@ public class Function_05_Test {
 
 	// TODO compléter la fonction
 	// TODO vérifier que l'age > 4 avec une assertion JUnit
-	Consumer<Person> verifyAge = (Person t) -> {
-		assert t.getAge() > 4;
-	};
+	Consumer<Person> verifyAge = (Person t) -> assertTrue(t.getAge() > 4);
 
 	// TODO compléter la fonction
 	// TODO vérifier que le mot de passe est "secret" avec une assertion JUnit
-	Consumer<Person> verifyPassword = (Person p) -> {
-		assert p.getPassword().equals("secret");
-	};
+	Consumer<Person> verifyPassword = (Person p) -> assertTrue(p.getPassword().equals("secret"));
+	
 	// end::functions[]
 
 	@Test

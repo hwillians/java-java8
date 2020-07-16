@@ -15,10 +15,10 @@ public class Function_06_Test {
 
     // tag::formatAge[]
     // TODO compléter la méthode
-    // TODO la méthode retourne une chaîne de caractères de la forme [age=<AGE>] (exemple : [age=12])
+    // TODO la méthode retourne une chaîne de caractères de la forme  (exemple : [age=12])
     String formatAge(Supplier<Person> supplier) {
         // TODO
-        return null;
+        return "[age="+supplier.get().getAge()+"]";
     }
     // end::formatAge[]
 
