@@ -13,7 +13,17 @@ public class Account {
         this.owner = owner;
     }
 
-    public Integer getBalance() {
+    /**
+	 * @param owner
+	 * @param balance
+	 */
+	public Account(Person owner, Integer balance) {
+		super();
+		this.owner = owner;
+		this.balance = balance;
+	}
+
+	public Integer getBalance() {
         return balance;
     }
 
